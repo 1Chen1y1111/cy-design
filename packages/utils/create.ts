@@ -4,7 +4,7 @@ function _bem(
   prefixName: string,
   blockSuffix: string,
   element: string,
-  modifer: string,
+  modifier: string,
 ) {
   if (blockSuffix) {
     prefixName += `-${blockSuffix}`
@@ -12,8 +12,8 @@ function _bem(
   if (element) {
     prefixName += `__${element}`
   }
-  if (modifer) {
-    prefixName += `--${modifer}`
+  if (modifier) {
+    prefixName += `--${modifier}`
   }
   return prefixName
 }
@@ -24,25 +24,25 @@ function createBEM(prefixName: string) {
   const e = (element: string = '') =>
     element ? _bem(prefixName, '', element, '') : ''
 
-  const m = (modifer: string = '') =>
-    modifer ? _bem(prefixName, '', '', modifer) : ''
+  const m = (modifier: string = '') =>
+    modifier ? _bem(prefixName, '', '', modifier) : ''
 
   const be = (blockSuffix: string = '', element: string = '') =>
     blockSuffix && element ? _bem(prefixName, blockSuffix, element, '') : ''
 
-  const bm = (blockSuffix: string = '', modifer: string = '') =>
-    blockSuffix && modifer ? _bem(prefixName, blockSuffix, '', modifer) : ''
+  const bm = (blockSuffix: string = '', modifier: string = '') =>
+    blockSuffix && modifier ? _bem(prefixName, blockSuffix, '', modifier) : ''
 
-  const em = (element: string = '', modifer: string = '') =>
-    element && modifer ? _bem(prefixName, '', element, modifer) : ''
+  const em = (element: string = '', modifier: string = '') =>
+    element && modifier ? _bem(prefixName, '', element, modifier) : ''
 
   const bem = (
     blockSuffix: string = '',
     element: string = '',
-    modifer: string = '',
+    modifier: string = '',
   ) =>
-    blockSuffix && element && modifer
-      ? _bem(prefixName, blockSuffix, element, modifer)
+    blockSuffix && element && modifier
+      ? _bem(prefixName, blockSuffix, element, modifier)
       : ''
 
   const is = (name: string, state: string | boolean) =>
