@@ -1,13 +1,7 @@
-<template>
-  <i :class="bem.b()" :style="style">
-    <slot />
-  </i>
-</template>
-
 <script setup lang="ts">
 import { computed } from 'vue'
 import { createNameSpace } from '@cy-design/utils/create'
-import { iconProps } from './icon'
+import { _IconProps } from './types'
 
 defineOptions({
   name: 'CyIcon',
@@ -16,7 +10,7 @@ defineOptions({
 
 const bem = createNameSpace('icon')
 
-const props = defineProps(iconProps)
+const props = defineProps(_IconProps)
 
 const style = computed(() => {
   if (!props.size && !props.color) return {}
@@ -27,3 +21,9 @@ const style = computed(() => {
   }
 })
 </script>
+
+<template>
+  <i :class="bem.b()" :style="style">
+    <slot />
+  </i>
+</template>
