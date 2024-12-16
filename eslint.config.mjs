@@ -9,5 +9,11 @@ export default antfu({
   ignores: [
     'node_modules',
     'dist',
+    'typings',
   ],
+  formatters: {
+    css: true,
+    html: true,
+    markdown: 'prettier',
+  },
 })

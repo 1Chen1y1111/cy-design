@@ -10,10 +10,6 @@ defineOptions({
 
 const props = defineProps(_IconProps)
 
-if (true) {
-  console.log(66)
-}
-
 const bem = createNameSpace('icon')
 
 const style = computed(() => {

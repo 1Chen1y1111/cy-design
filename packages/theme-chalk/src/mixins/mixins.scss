@@ -1,5 +1,5 @@
-@use "config" as *;
-@forward "config";
+@use 'config' as *;
+@forward 'config';
 
 @mixin b($block) {
   $B: $namespace + $common-separator + $block;

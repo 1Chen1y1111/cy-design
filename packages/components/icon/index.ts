@@ -1,6 +1,6 @@
+import { withInstall } from '@cy-design/utils/with-install'
 // 整合 并导出
 import _Icon from './src/index.vue'
-import { withInstall } from '@cy-design/utils/with-install'
 
 export * from './src/types'
 
