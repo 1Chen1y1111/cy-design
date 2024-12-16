@@ -1,8 +1,11 @@
 {
   "name": "cy-ui",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "main": "index.js",
   "scripts": {
     "dev": "pnpm -C play dev",
@@ -16,9 +19,6 @@
     "play",
     "docs"
   ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@cy-design/components": "workspace:^",
     "@cy-design/theme-chalk": "workspace:^",
@@ -27,15 +27,9 @@
     "vue": "^3.4.38"
   },
   "devDependencies": {
-    "@eslint/js": "^9.9.1",
-    "@stylistic/eslint-plugin": "^2.6.4",
-    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "@antfu/eslint-config": "^3.12.0",
     "eslint": "^9.9.1",
-    "eslint-plugin-vue": "^9.27.0",
     "globals": "^15.9.0",
-    "prettier": "^3.3.3",
-    "sass": "^1.77.8",
-    "typescript-eslint": "^8.2.0",
-    "vue-eslint-parser": "^9.4.3"
+    "sass": "^1.77.8"
   }
 }

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import { createNameSpace } from '@cy-design/utils/create'
+import { computed } from 'vue'
 import { _IconProps } from './types'
 
 defineOptions({
@@ -8,15 +8,20 @@ defineOptions({
   inheritAttrs: false,
 })
 
-const bem = createNameSpace('icon')
-
 const props = defineProps(_IconProps)
 
+if (true) {
+  console.log(66)
+}
+
+const bem = createNameSpace('icon')
+
 const style = computed(() => {
-  if (!props.size && !props.color) return {}
+  if (!props.size && !props.color)
+    return {}
 
   return {
-    ...(props.size ? { 'font-size': props.size + 'px' } : {}),
+    ...(props.size ? { 'font-size': `${props.size}px` } : {}),
     ...(props.color ? { color: props.color } : {}),
   }
 })
