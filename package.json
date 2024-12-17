@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "pnpm -C play dev",
     "doc:dev": "pnpm -C docs dev",
+    "doc:build": "pnpm -C docs docs:build",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
   },

@@ -1,8 +1,8 @@
-/**
+            /**
  * Colors
  * -------------------------------------------------------------------------- */
 
-:root {
+ :root {
   --vp-c-brand: #3889c9;
   --vp-c-brand-light: #1f414a;
   --vp-c-brand-lighter: #6ff1f1;
@@ -34,9 +34,17 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(#6ff1f1, #3889c9 30%, #41d1ff);
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    #6ff1f1,
+    #3889c9 30%,
+    #41d1ff
+  );
 
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #6ff1f1 10%, #3889c9 10%);
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #6ff1f1 10%,
+    #3889c9 10%
+  );
   --vp-home-hero-image-filter: blur(40px);
 }
 

@@ -1,9 +1,8 @@
-import CyIcon from '@cy-design/components/icon'
 import DefaultTheme from 'vitepress/theme'
+import CyIcon from '@cy-design/components/icon'
 import '@cy-design/theme-chalk/src/index.scss'
 
 import './styles/vars.css'
-
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {

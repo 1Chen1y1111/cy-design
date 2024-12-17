@@ -14,7 +14,7 @@ hero:
       text: Quick Start
       link: /guide/
     - theme: alt
-      text: View on github
+      text: View on Github
       link: https://github.com/1Chen1y1111/cy-design
 
 features:
